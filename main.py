@@ -1,12 +1,6 @@
-class Item: 
-    def __init__(self, name, price, quantity=0):
-        self.name = name 
-        self.price = price 
-        self.quantity = quantity 
+from item import Item 
+from phone import Phone
 
-    def calculate_total_price(self):
-        return self.price * self.quantity
+Item.instantiate_from_csv()
 
-item1 = Item("Phone", 100, 5) 
-
-
+print(Item.all)
